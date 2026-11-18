@@ -13,19 +13,30 @@
 </head>
 <body>
     <header class="app-header">
-        <div class="container app-header-inner">
-            <div class="brand-mark" aria-hidden="true">W</div>
-            <div>
-                <p class="header-kicker mb-1">WEBSHOP</p>
-                <h1 class="mb-0">Felhasználók</h1>
-            </div>
+        <div class="container app-header-inner justify-content-between flex-wrap py-3">
+            <a href="index.html" class="d-flex align-items-center gap-3 text-decoration-none text-reset">
+                <div class="brand-mark shadow-sm" aria-hidden="true">W</div>
+                <div>
+                    <p class="header-kicker mb-1">WEBSHOP / ADMIN</p>
+                    <h1 class="mb-0">Felhasználók</h1>
+                </div>
+            </a>
+            <nav aria-label="Fő navigáció">
+                <div class="nav nav-pills gap-1">
+                    <a class="nav-link active" href="index.html" aria-current="page">Felhasználók</a>
+                    <a class="nav-link text-body-secondary" href="product.html">Termékek</a>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main class="container app-main">
-        <section class="user-form-section" aria-labelledby="urlap-cim">
+        <section class="user-form-section shadow-sm" aria-labelledby="urlap-cim">
             <div class="section-heading">
-                <h2 id="urlap-cim" class="mb-0">Új felhasználó</h2>
+                <div>
+                    <p class="header-kicker mb-1">FELHASZNÁLÓKEZELÉS</p>
+                    <h2 id="urlap-cim" class="mb-0">Új felhasználó</h2>
+                </div>
             </div>
             <form id="felhasznalo-urlap" class="row g-3">
                 <div class="col-12 col-md-6">
@@ -53,23 +64,23 @@
                     </select>
                 </div>
                 <div class="col-12 d-flex align-items-end gap-2">
-                    <button type="submit" class="btn btn-primary" id="felhasznaloMentes">
-                        Létrehozás
-                    </button>
+                    <button type="submit" class="btn btn-primary px-4" id="felhasznaloMentes">Létrehozás</button>
                     <button type="button" class="btn btn-outline-secondary d-none" id="szerkesztesMegse">Mégse</button>
                 </div>
             </form>
-
             <div id="urlap-allapot" class="alert d-none mt-3 mb-0" role="status" aria-live="polite"></div>
         </section>
 
         <section class="user-list-section" aria-labelledby="lista-cim">
-            <div class="section-heading list-heading">
-                <h2 id="lista-cim" class="mb-0">Felhasználók</h2>
+            <div class="section-heading list-heading justify-content-between">
+                <div>
+                    <p class="header-kicker mb-1">ÁTTEKINTÉS</p>
+                    <h2 id="lista-cim" class="mb-0">Felhasználók</h2>
+                </div>
             </div>
-            <div id="users-status" class="alert alert-info" role="status" aria-live="polite">Felhasználók betöltése...</div>
-            <div class="table-responsive user-table-wrap">
-                <table class="table align-middle mb-0">
+            <div id="users-status" class="alert alert-info shadow-sm" role="status" aria-live="polite">Felhasználók betöltése...</div>
+            <div class="table-responsive user-table-wrap shadow-sm">
+                <table class="table table-hover align-middle mb-0">
                     <thead>
                         <tr>
                             <th scope="col">Név</th>
